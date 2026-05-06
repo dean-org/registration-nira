@@ -296,6 +296,10 @@ public class CredentialRequestorStageTest {
 
 		dto.setReg_type(RegistrationType.NEW.name());
 
+		Map<String, String> tags = new HashMap<>();
+		tags.put("AGE_GROUP", "ADULT");
+		dto.setTags(tags);
+
 		ResponseWrapper<CredentialResponseDto> responseWrapper = new ResponseWrapper<>();
 		CredentialResponseDto credentialResponseDto = new CredentialResponseDto();
 		credentialResponseDto.setRequestId("879664323421");
@@ -347,6 +351,10 @@ public class CredentialRequestorStageTest {
 		dto.setRid("1234567890987654321");
 
 		dto.setReg_type(RegistrationType.NEW.name());
+		
+		Map<String, String> tags = new HashMap<>();
+		tags.put("AGE_GROUP", "ADULT");
+		dto.setTags(tags);
 
 		ResponseWrapper<CredentialResponseDto> responseWrapper = new ResponseWrapper<>();
 		CredentialResponseDto credentialResponseDto = new CredentialResponseDto();
@@ -368,6 +376,10 @@ public class CredentialRequestorStageTest {
 
 		dto.setReg_type(RegistrationType.NEW.name());
 
+		Map<String, String> tags = new HashMap<>();
+		tags.put("AGE_GROUP", "ADULT");
+		dto.setTags(tags);
+
 		ResponseWrapper<CredentialResponseDto> responseWrapper = new ResponseWrapper<>();
 		CredentialResponseDto credentialResponseDto = new CredentialResponseDto();
 		credentialResponseDto.setRequestId("879664323421");
@@ -387,6 +399,10 @@ public class CredentialRequestorStageTest {
 		dto.setRid("1234567890987654321");
 
 		dto.setReg_type(RegistrationType.NEW.name());
+
+		Map<String, String> tags = new HashMap<>();
+		tags.put("AGE_GROUP", "ADULT");
+		dto.setTags(tags);
 
 		ResponseWrapper<CredentialResponseDto> responseWrapper = new ResponseWrapper<>();
 		CredentialResponseDto credentialResponseDto = new CredentialResponseDto();
@@ -412,6 +428,10 @@ public class CredentialRequestorStageTest {
 		dto.setRid("1234567890987654321");
 
 		dto.setReg_type(RegistrationType.NEW.name());
+
+		Map<String, String> tags = new HashMap<>();
+		tags.put("AGE_GROUP", "ADULT");
+		dto.setTags(tags);
 
 		ResponseWrapper<CredentialResponseDto> responseWrapper = new ResponseWrapper<>();
 		CredentialResponseDto credentialResponseDto = new CredentialResponseDto();
@@ -442,6 +462,10 @@ public class CredentialRequestorStageTest {
 
 		dto.setReg_type(RegistrationType.NEW.name());
 
+		Map<String, String> tags = new HashMap<>();
+		tags.put("AGE_GROUP", "ADULT");
+		dto.setTags(tags);
+
 		VidsInfosDTO vidsInfosDTO = new VidsInfosDTO();
 		vidsInfosDTO.setResponse(null);
 		Mockito.when(restClientService.getApi(any(), any(), anyString(), any(), any())).thenReturn(vidsInfosDTO);
@@ -458,6 +482,10 @@ public class CredentialRequestorStageTest {
 		dto.setRid("1234567890987654321");
 
 		dto.setReg_type(RegistrationType.NEW.name());
+
+		Map<String, String> tags = new HashMap<>();
+		tags.put("AGE_GROUP", "ADULT");
+		dto.setTags(tags);
 
 		VidsInfosDTO vidsInfosDTO = new VidsInfosDTO();
 		vidsInfosDTO.setResponse(null);
