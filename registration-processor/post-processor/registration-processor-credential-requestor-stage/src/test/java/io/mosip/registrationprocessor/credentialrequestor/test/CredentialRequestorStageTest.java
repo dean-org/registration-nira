@@ -320,6 +320,10 @@ public class CredentialRequestorStageTest {
 
 		dto.setReg_type(RegistrationType.NEW.name());
 
+		Map<String, String> tags = new HashMap<>();
+	    tags.put("AGE_GROUP", "ADULT");
+	    dto.setTags(tags);
+
 		ResponseWrapper<?> responseWrapper = new ResponseWrapper<>();
 		ErrorDTO error = new ErrorDTO();
 		error.setErrorCode("IDR-CRG-004");
